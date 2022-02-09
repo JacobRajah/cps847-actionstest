@@ -15,9 +15,10 @@ jobs:
     strategy:
       matrix:
         # Run against 3 versions of Python
-        python-version: ["3.8", "3.9", "3.10"]
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        python-version: ["3.8", "3.9"]
         
-    runs-on: ubuntu-latest
+    runs-on: ${{matrix.os}}
 
     steps:
     - uses: actions/checkout@v2
