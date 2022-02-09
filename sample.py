@@ -9,9 +9,6 @@ def increment_by_two(var_to_increment):
     """
     return var_to_increment + 2
   
-"""
-  This is another function
-"""
 def increment_by_three(var_to_increment):
     """
     This function increments input by three
